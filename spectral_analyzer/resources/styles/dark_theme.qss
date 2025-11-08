@@ -1,0 +1,369 @@
+/* Dark Theme Stylesheet for Spectral Analyzer */
+
+/* Main Window */
+QMainWindow {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border-bottom: 1px solid #555555;
+    padding: 2px;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+QMenuBar::item:selected {
+    background-color: #555555;
+}
+
+QMenuBar::item:pressed {
+    background-color: #666666;
+}
+
+/* Tool Bar */
+QToolBar {
+    background-color: #3c3c3c;
+    border: none;
+    spacing: 3px;
+    padding: 4px;
+}
+
+QToolBar::separator {
+    background-color: #555555;
+    width: 1px;
+    margin: 2px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border-top: 1px solid #555555;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 6px 12px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #555555;
+    border-color: #777777;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}
+
+QPushButton:disabled {
+    background-color: #333333;
+    color: #888888;
+    border-color: #444444;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 1px solid #555555;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+}
+
+QTabBar::tab {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin-right: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #555555;
+    border-bottom: 2px solid #4CAF50;
+}
+
+QTabBar::tab:hover {
+    background-color: #4a4a4a;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #555555;
+    border: 1px solid #666666;
+}
+
+QSplitter::handle:horizontal {
+    width: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 3px;
+}
+
+/* Group Box */
+QGroupBox {
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 8px;
+    padding: 0 4px 0 4px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Text Edit */
+QTextEdit {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+    selection-background-color: #4CAF50;
+}
+
+/* Line Edit */
+QLineEdit {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+    selection-background-color: #4CAF50;
+}
+
+QLineEdit:focus {
+    border-color: #4CAF50;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 4px;
+    min-width: 100px;
+}
+
+QComboBox:hover {
+    border-color: #777777;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/down_arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+/* List Widget */
+QListWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    selection-background-color: #4CAF50;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 4px;
+    border-bottom: 1px solid #333333;
+}
+
+QListWidget::item:selected {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+QListWidget::item:hover {
+    background-color: #555555;
+}
+
+/* Table Widget */
+QTableWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    gridline-color: #444444;
+    selection-background-color: #4CAF50;
+}
+
+QTableWidget::item {
+    padding: 4px;
+}
+
+QTableWidget::item:selected {
+    background-color: #4CAF50;
+}
+
+QHeaderView::section {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border: 1px solid #555555;
+    padding: 4px;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+QProgressBar {
+    background-color: #1e1e1e;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+QProgressBar::chunk {
+    background-color: #4CAF50;
+    border-radius: 3px;
+}
+
+/* Scroll Bar */
+QScrollBar:vertical {
+    background-color: #2b2b2b;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #555555;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #666666;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+/* Check Box */
+QCheckBox {
+    color: #ffffff;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    background-color: #1e1e1e;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #777777;
+}
+
+/* Spin Box */
+QSpinBox, QDoubleSpinBox {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #4CAF50;
+}
+
+/* Label */
+QLabel {
+    color: #ffffff;
+}
+
+/* Frame */
+QFrame {
+    background-color: #2b2b2b;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+/* Dialog */
+QDialog {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Message Box */
+QMessageBox {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    padding: 6px 16px;
+}
+
+/* File Drop Zone Specific */
+#FileDropZone {
+    border: 2px dashed #666666;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+#FileDropZone:hover {
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Preview Widget Specific */
+#PreviewWidget {
+    background-color: #2b2b2b;
+}
+
+/* Status indicators */
+.error-text {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.warning-text {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.success-text {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.info-text {
+    color: #2196F3;
+}

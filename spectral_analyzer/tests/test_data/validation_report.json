@@ -1,0 +1,868 @@
+{
+  "validation_timestamp": "2025-11-08T00:34:16.329267",
+  "total_files": 19,
+  "passed": 9,
+  "warnings": 4,
+  "failed": 6,
+  "files": {
+    "baseline_european.csv": {
+      "filename": "baseline_european.csv",
+      "timestamp": "2025-11-08T00:34:16.329714",
+      "file_exists": true,
+      "file_size": 22381,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 4,
+        "has_headers": false,
+        "total_lines": 1505,
+        "file_size": 22381
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          0.915
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 11,
+        "noise_level": 0.028195192590122303,
+        "columns": [
+          "Wellenzahl (cm-1)",
+          "Absorption"
+        ],
+        "numeric_columns": [
+          "Wellenzahl (cm-1)",
+          "Absorption"
+        ]
+      },
+      "status": "PASS"
+    },
+    "baseline_perfect.csv": {
+      "filename": "baseline_perfect.csv",
+      "timestamp": "2025-11-08T00:34:16.365749",
+      "file_exists": true,
+      "file_size": 25273,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 1501,
+        "file_size": 25273
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          0.884078
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 24,
+        "noise_level": 0.027187720377760745,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "baseline_raman.csv": {
+      "filename": "baseline_raman.csv",
+      "timestamp": "2025-11-08T00:34:16.386802",
+      "file_exists": true,
+      "file_size": 25159,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 1501,
+        "file_size": 25159
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          200.0,
+          3500.0
+        ],
+        "wavenumber_span": 3300.0,
+        "intensity_range": [
+          0.001,
+          1.098103
+        ],
+        "spectroscopy_type": "raman",
+        "is_ascending": true,
+        "is_descending": false,
+        "data_density": 0.45454545454545453,
+        "peak_count": 7,
+        "noise_level": 0.02616207315872884,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "european_format.csv": {
+      "filename": "european_format.csv",
+      "timestamp": "2025-11-08T00:34:16.407831",
+      "file_exists": true,
+      "file_size": 219,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 3,
+        "has_headers": false,
+        "total_lines": 14,
+        "file_size": 219
+      },
+      "spectral": {
+        "data_points": 10,
+        "wavenumber_range": [
+          3995.5,
+          4000.0
+        ],
+        "wavenumber_span": 4.5,
+        "intensity_range": [
+          0.112,
+          0.127
+        ],
+        "spectroscopy_type": "unknown",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.2222222222222223,
+        "peak_count": 0,
+        "noise_level": 0.001749779527558181,
+        "columns": [
+          "Wellenzahl",
+          "Absorption"
+        ],
+        "numeric_columns": [
+          "Wellenzahl",
+          "Absorption"
+        ]
+      },
+      "status": "FAIL",
+      "issues": [
+        "Too few data points: 10"
+      ]
+    },
+    "multi_column.csv": {
+      "filename": "multi_column.csv",
+      "timestamp": "2025-11-08T00:34:16.410744",
+      "file_exists": true,
+      "file_size": 429,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 11,
+        "file_size": 429
+      },
+      "spectral": {
+        "data_points": 10,
+        "wavenumber_range": [
+          3995.5,
+          4000.0
+        ],
+        "wavenumber_span": 4.5,
+        "intensity_range": [
+          0.112,
+          0.127
+        ],
+        "spectroscopy_type": "unknown",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.2222222222222223,
+        "peak_count": 0,
+        "noise_level": 0.001749779527558181,
+        "columns": [
+          "Wavenumber",
+          "Sample1_Abs",
+          "Sample2_Abs",
+          "Sample3_Abs",
+          "Baseline",
+          "Transmittance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Sample1_Abs",
+          "Sample2_Abs",
+          "Sample3_Abs",
+          "Baseline",
+          "Transmittance"
+        ]
+      },
+      "status": "FAIL",
+      "issues": [
+        "Too few data points: 10"
+      ]
+    },
+    "no_header.csv": {
+      "filename": "no_header.csv",
+      "timestamp": "2025-11-08T00:34:16.413107",
+      "file_exists": true,
+      "file_size": 194,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": false,
+        "total_lines": 15,
+        "file_size": 194
+      },
+      "spectral": {
+        "data_points": 14,
+        "wavenumber_range": [
+          3993.0,
+          3999.5
+        ],
+        "wavenumber_span": 6.5,
+        "intensity_range": [
+          0.102,
+          0.127
+        ],
+        "spectroscopy_type": "unknown",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.1538461538461537,
+        "peak_count": 1,
+        "noise_level": 0.0011200169060431573,
+        "columns": [
+          "4000.0",
+          "0.123"
+        ],
+        "numeric_columns": [
+          "4000.0",
+          "0.123"
+        ]
+      },
+      "status": "FAIL",
+      "issues": [
+        "Too few data points: 14"
+      ]
+    },
+    "performance_large_file.csv": {
+      "filename": "performance_large_file.csv",
+      "timestamp": "2025-11-08T00:34:16.416458",
+      "file_exists": true,
+      "file_size": 198441,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 3,
+        "has_headers": true,
+        "total_lines": 10004,
+        "file_size": 198441
+      },
+      "spectral": {
+        "data_points": 10000,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          1.06734933
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.7777777777777777,
+        "peak_count": 335,
+        "noise_level": 0.02141896812737734,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "problematic_data.csv": {
+      "filename": "problematic_data.csv",
+      "timestamp": "2025-11-08T00:34:16.547094",
+      "file_exists": true,
+      "file_size": 207,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 1,
+        "has_headers": true,
+        "total_lines": 12,
+        "file_size": 207
+      },
+      "spectral": {
+        "error": "Insufficient numeric columns"
+      },
+      "status": "FAIL",
+      "issues": [
+        "Spectral error: Insufficient numeric columns"
+      ]
+    },
+    "sample_encoding_test.csv": {
+      "filename": "sample_encoding_test.csv",
+      "timestamp": "2025-11-08T00:34:16.550096",
+      "file_exists": true,
+      "file_size": 25386,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 4,
+        "has_headers": true,
+        "total_lines": 1505,
+        "file_size": 25386
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          0.990284
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 24,
+        "noise_level": 0.026166490909879325,
+        "columns": [
+          "Nombre_d_onde",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Nombre_d_onde",
+          "Absorbance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "sample_extra_columns.csv": {
+      "filename": "sample_extra_columns.csv",
+      "timestamp": "2025-11-08T00:34:16.571041",
+      "file_exists": true,
+      "file_size": 146668,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 1501,
+        "file_size": 146668
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          1.143261
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 16,
+        "noise_level": 0.028879543013659085,
+        "columns": [
+          "Wavenumber",
+          "Absorbance",
+          "Timestamp",
+          "Operator",
+          "Quality_Flag",
+          "Temperature",
+          "Humidity",
+          "Pressure",
+          "Scan_Number",
+          "Resolution",
+          "Apodization"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance",
+          "Temperature",
+          "Humidity",
+          "Pressure",
+          "Scan_Number",
+          "Resolution"
+        ]
+      },
+      "status": "PASS"
+    },
+    "sample_mixed_issues.csv": {
+      "filename": "sample_mixed_issues.csv",
+      "timestamp": "2025-11-08T00:34:16.597953",
+      "file_exists": true,
+      "file_size": 51213,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ";",
+        "decimal_separator": ".",
+        "comment_lines": 5,
+        "has_headers": true,
+        "total_lines": 1506,
+        "file_size": 51213
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          9.814,
+          99.77
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 323,
+        "noise_level": 4.489244757958591,
+        "columns": [
+          "Wave Number (cm-1)",
+          "Transmittance %",
+          "Operator",
+          "Notes"
+        ],
+        "numeric_columns": [
+          "Wave Number (cm-1)",
+          "Transmittance %"
+        ]
+      },
+      "status": "WARN",
+      "warnings": [
+        "Unusually high intensity values",
+        "High noise level: 4.489"
+      ]
+    },
+    "sample_no_headers.csv": {
+      "filename": "sample_no_headers.csv",
+      "timestamp": "2025-11-08T00:34:16.619648",
+      "file_exists": true,
+      "file_size": 12666,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": false,
+        "total_lines": 800,
+        "file_size": 12666
+      },
+      "spectral": {
+        "data_points": 799,
+        "wavenumber_range": [
+          400.0,
+          3995.5
+        ],
+        "wavenumber_span": 3595.5,
+        "intensity_range": [
+          0.001,
+          0.669764
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.2222222222222222,
+        "peak_count": 9,
+        "noise_level": 0.036124234569566545,
+        "columns": [
+          "4000.0",
+          "0.039182"
+        ],
+        "numeric_columns": [
+          "4000.0",
+          "0.039182"
+        ]
+      },
+      "status": "PASS"
+    },
+    "sample_noisy_data.csv": {
+      "filename": "sample_noisy_data.csv",
+      "timestamp": "2025-11-08T00:34:16.631882",
+      "file_exists": true,
+      "file_size": 25407,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 3,
+        "has_headers": true,
+        "total_lines": 1504,
+        "file_size": 25407
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          1.92367
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 41,
+        "noise_level": 0.1418981203670538,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "WARN",
+      "warnings": [
+        "High noise level: 0.142"
+      ]
+    },
+    "sample_raman_spectrum.csv": {
+      "filename": "sample_raman_spectrum.csv",
+      "timestamp": "2025-11-08T00:34:16.653480",
+      "file_exists": true,
+      "file_size": 13813,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 5,
+        "has_headers": true,
+        "total_lines": 1206,
+        "file_size": 13813
+      },
+      "spectral": {
+        "data_points": 1200,
+        "wavenumber_range": [
+          200.0,
+          3500.0
+        ],
+        "wavenumber_span": 3300.0,
+        "intensity_range": [
+          10.0,
+          10281.0
+        ],
+        "spectroscopy_type": "raman",
+        "is_ascending": true,
+        "is_descending": false,
+        "data_density": 0.36363636363636365,
+        "peak_count": 12,
+        "noise_level": 273.10828596447635,
+        "columns": [
+          "Raman_Shift_cm-1",
+          "Intensity_counts"
+        ],
+        "numeric_columns": [
+          "Raman_Shift_cm-1",
+          "Intensity_counts"
+        ]
+      },
+      "status": "WARN",
+      "warnings": [
+        "Unusually high intensity values",
+        "High noise level: 273.108"
+      ]
+    },
+    "sample_scale_issues.csv": {
+      "filename": "sample_scale_issues.csv",
+      "timestamp": "2025-11-08T00:34:16.671993",
+      "file_exists": true,
+      "file_size": 21731,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 1501,
+        "file_size": 21731
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          1.0,
+          1044.041
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 18,
+        "noise_level": 27.875516352585,
+        "columns": [
+          "Wavenumber",
+          "Absorbance_x1000"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance_x1000"
+        ]
+      },
+      "status": "WARN",
+      "warnings": [
+        "Unusually high intensity values",
+        "High noise level: 27.876"
+      ]
+    },
+    "sample_spectral.csv": {
+      "filename": "sample_spectral.csv",
+      "timestamp": "2025-11-08T00:34:16.694770",
+      "file_exists": true,
+      "file_size": 151,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 11,
+        "file_size": 151
+      },
+      "spectral": {
+        "data_points": 10,
+        "wavenumber_range": [
+          3995.5,
+          4000.0
+        ],
+        "wavenumber_span": 4.5,
+        "intensity_range": [
+          0.112,
+          0.127
+        ],
+        "spectroscopy_type": "unknown",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.2222222222222223,
+        "peak_count": 0,
+        "noise_level": 0.001749779527558181,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "FAIL",
+      "issues": [
+        "Too few data points: 10"
+      ]
+    },
+    "sample_tab_delimited.csv": {
+      "filename": "sample_tab_delimited.csv",
+      "timestamp": "2025-11-08T00:34:16.696847",
+      "file_exists": true,
+      "file_size": 54862,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": "\t",
+        "decimal_separator": ".",
+        "comment_lines": 4,
+        "has_headers": true,
+        "total_lines": 1505,
+        "file_size": 54862
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          1.031255
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 0.4166666666666667,
+        "peak_count": 18,
+        "noise_level": 0.026404367193611274,
+        "columns": [
+          "Wavenumber",
+          "Absorbance",
+          "Sample_ID",
+          "Quality_Flag",
+          "Temperature"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance",
+          "Temperature"
+        ]
+      },
+      "status": "PASS"
+    },
+    "sample_wrong_order.csv": {
+      "filename": "sample_wrong_order.csv",
+      "timestamp": "2025-11-08T00:34:16.719791",
+      "file_exists": true,
+      "file_size": 25273,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": ",",
+        "decimal_separator": ".",
+        "comment_lines": 0,
+        "has_headers": true,
+        "total_lines": 1501,
+        "file_size": 25273
+      },
+      "spectral": {
+        "data_points": 1500,
+        "wavenumber_range": [
+          400.0,
+          4000.0
+        ],
+        "wavenumber_span": 3600.0,
+        "intensity_range": [
+          0.001,
+          1.07155
+        ],
+        "spectroscopy_type": "ftir",
+        "is_ascending": true,
+        "is_descending": false,
+        "data_density": 0.4166666666666667,
+        "peak_count": 11,
+        "noise_level": 0.03042269631540687,
+        "columns": [
+          "Wavenumber",
+          "Absorbance"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "tab_delimited.csv": {
+      "filename": "tab_delimited.csv",
+      "timestamp": "2025-11-08T00:34:16.742495",
+      "file_exists": true,
+      "file_size": 378,
+      "structure": {
+        "encoding": "utf-8",
+        "delimiter": "\t",
+        "decimal_separator": ".",
+        "comment_lines": 3,
+        "has_headers": true,
+        "total_lines": 14,
+        "file_size": 378
+      },
+      "spectral": {
+        "data_points": 10,
+        "wavenumber_range": [
+          3995.5,
+          4000.0
+        ],
+        "wavenumber_span": 4.5,
+        "intensity_range": [
+          0.112,
+          0.127
+        ],
+        "spectroscopy_type": "unknown",
+        "is_ascending": false,
+        "is_descending": true,
+        "data_density": 2.2222222222222223,
+        "peak_count": 0,
+        "noise_level": 0.001749779527558181,
+        "columns": [
+          "Wavenumber",
+          "Absorbance",
+          "Sample_ID",
+          "Quality"
+        ],
+        "numeric_columns": [
+          "Wavenumber",
+          "Absorbance"
+        ]
+      },
+      "status": "FAIL",
+      "issues": [
+        "Too few data points: 10"
+      ]
+    }
+  },
+  "format_coverage": {
+    "delimiters": [
+      ";",
+      ",",
+      "\t"
+    ],
+    "decimal_separators": [
+      "."
+    ],
+    "encodings": [
+      "utf-8"
+    ],
+    "has_comments": true,
+    "has_no_headers": true,
+    "has_extra_columns": true,
+    "spectroscopy_types": [
+      "unknown",
+      "ftir",
+      "raman"
+    ]
+  }
+}

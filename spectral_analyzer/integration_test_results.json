@@ -1,0 +1,57 @@
+{
+  "File Loading and Parsing": {
+    "status": "FAILED",
+    "duration": 0.3091259002685547,
+    "details": {}
+  },
+  "CSV Parser Performance": {
+    "status": "PASSED",
+    "duration": 0.028231143951416016,
+    "details": {}
+  },
+  "Data Validation": {
+    "status": "PASSED",
+    "duration": 0.10322308540344238,
+    "details": {}
+  },
+  "AI Normalization": {
+    "status": "PASSED",
+    "duration": 0.08696913719177246,
+    "details": {}
+  },
+  "Graph Generation": {
+    "status": "PASSED",
+    "duration": 0.48545098304748535,
+    "details": {}
+  },
+  "Batch Processing": {
+    "status": "FAILED",
+    "duration": 1.890852689743042,
+    "details": {}
+  },
+  "Caching System": {
+    "status": "PASSED",
+    "duration": 0.004068136215209961,
+    "details": {}
+  },
+  "Cost Tracking": {
+    "status": "PASSED",
+    "duration": 0.01118612289428711,
+    "details": {}
+  },
+  "Error Handling": {
+    "status": "PASSED",
+    "duration": 0.008745908737182617,
+    "details": {}
+  },
+  "Memory Usage": {
+    "status": "PASSED",
+    "duration": 0.18414092063903809,
+    "details": {}
+  },
+  "Complete Workflow": {
+    "status": "PASSED",
+    "duration": 0.42693400382995605,
+    "details": {}
+  }
+}

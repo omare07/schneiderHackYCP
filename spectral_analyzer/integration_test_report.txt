@@ -1,0 +1,35 @@
+================================================================================
+COMPREHENSIVE INTEGRATION TEST REPORT
+================================================================================
+Test Date: 2025-11-08 01:04:36
+Test Environment: darwin
+Python Version: 3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]
+
+TEST RESULTS SUMMARY:
+----------------------------------------
+Total Tests: 11
+Passed: 9 ✅
+Failed: 2 ❌
+Errors: 0 ⚠️
+Success Rate: 81.8%
+
+DETAILED RESULTS:
+----------------------------------------
+❌ File Loading and Parsing (0.31s)
+✅ CSV Parser Performance (0.03s)
+✅ Data Validation (0.10s)
+✅ AI Normalization (0.09s)
+✅ Graph Generation (0.49s)
+❌ Batch Processing (1.89s)
+✅ Caching System (0.00s)
+✅ Cost Tracking (0.01s)
+✅ Error Handling (0.01s)
+✅ Memory Usage (0.18s)
+✅ Complete Workflow (0.43s)
+
+RECOMMENDATIONS:
+----------------------------------------
+❌ Application has critical issues that need to be addressed before production.
+   Review failed tests and fix underlying problems.
+
+================================================================================

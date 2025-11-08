@@ -1,0 +1,107 @@
+# AI-Powered Spectral Analysis Desktop Application
+# Dependencies for production deployment
+
+# Core GUI Framework
+PyQt6==6.6.1
+PyQt6-Qt6==6.6.1
+
+# Data Processing and Analysis
+pandas==2.1.4
+numpy==1.25.2
+matplotlib==3.8.2
+scipy==1.11.4
+
+# HTTP Client for API calls
+httpx==0.25.2
+requests==2.31.0
+
+# Cryptography and Security
+cryptography==41.0.8
+keyring==24.3.0
+
+# Caching and Database
+redis==5.0.1
+sqlite3  # Built-in Python module
+
+# File and Data Handling
+openpyxl==3.1.2
+xlrd==2.0.1
+chardet==5.2.0
+python-magic==0.4.27
+
+# Configuration Management
+pyyaml==6.0.1
+configparser  # Built-in Python module
+toml==0.10.2
+
+# Logging and Monitoring
+loguru==0.7.2
+psutil==5.9.6
+
+# Async Processing
+asyncio  # Built-in Python module
+aiofiles==23.2.1
+asyncqt==0.8.0
+
+# Testing Framework
+pytest==7.4.3
+pytest-qt==4.2.0
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development Tools
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+isort==5.12.0
+
+# Type Hints
+typing-extensions==4.8.0
+types-requests==2.31.0.10
+types-PyYAML==6.0.12.12
+
+# Performance and Optimization
+numba==0.58.1
+cython==3.0.6
+
+# Network and Integration
+oauth2lib==3.2.2
+pyjwt==2.8.0
+
+# Utilities
+python-dateutil==2.8.2
+click==8.1.7
+tqdm==4.66.1
+pathlib  # Built-in Python module
+hashlib  # Built-in Python module
+json  # Built-in Python module
+uuid  # Built-in Python module
+platform  # Built-in Python module
+os  # Built-in Python module
+sys  # Built-in Python module
+time  # Built-in Python module
+datetime  # Built-in Python module
+threading  # Built-in Python module
+multiprocessing  # Built-in Python module
+queue  # Built-in Python module
+contextlib  # Built-in Python module
+functools  # Built-in Python module
+itertools  # Built-in Python module
+collections  # Built-in Python module
+dataclasses  # Built-in Python module
+enum  # Built-in Python module
+abc  # Built-in Python module
+typing  # Built-in Python module
+warnings  # Built-in Python module
+traceback  # Built-in Python module
+logging  # Built-in Python module
+re  # Built-in Python module
+base64  # Built-in Python module
+tempfile  # Built-in Python module
+shutil  # Built-in Python module
+glob  # Built-in Python module
+csv  # Built-in Python module
+io  # Built-in Python module
+gzip  # Built-in Python module
+zipfile  # Built-in Python module

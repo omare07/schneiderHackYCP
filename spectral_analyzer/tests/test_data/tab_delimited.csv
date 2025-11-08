@@ -1,0 +1,14 @@
+// Instrument: Bruker FTIR
+// Operator: Lab Tech
+// Date: 2024-01-15
+Wavenumber	Absorbance	Sample_ID	Quality
+4000.0	0.123	Sample_A	Good
+3999.5	0.125	Sample_A	Good
+3999.0	0.127	Sample_A	Good
+3998.5	0.124	Sample_A	Good
+3998.0	0.122	Sample_A	Good
+3997.5	0.120	Sample_A	Good
+3997.0	0.118	Sample_A	Fair
+3996.5	0.116	Sample_A	Fair
+3996.0	0.114	Sample_A	Good
+3995.5	0.112	Sample_A	Good

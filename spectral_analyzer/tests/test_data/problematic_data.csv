@@ -1,0 +1,12 @@
+# This file contains various data quality issues for testing
+Wavenumber,Absorbance
+4000.0,0.123
+4000.0,0.125
+3999.5,
+3999.0,invalid_data
+3998.5,0.124
+,0.122
+3997.0,100.5
+3996.5,0.116
+3990.0,0.114
+3989.5,-0.5
