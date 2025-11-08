@@ -326,7 +326,7 @@ const Dashboard = () => {
     return pdf.output('blob')
   }
 
-  // Batch: Download all graphs
+  // Batch: Download all graphs as ZIP
   const handleDownloadAllGraphs = async () => {
     setDownloadMenuAnchor(null)
     
@@ -362,7 +362,7 @@ const Dashboard = () => {
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)
       const zipFilename = `spectral_graphs_${timestamp}.zip`
       
-      // Use Save As dialog
+      // Use Save As dialog to let user choose where to save
       await downloadWithSaveAs(zipBlob, zipFilename)
       toast.dismiss('download-graphs')
     } catch (error: any) {
@@ -370,7 +370,7 @@ const Dashboard = () => {
     }
   }
 
-  // Batch: Download all reports
+  // Batch: Download all reports as ZIP
   const handleDownloadAllReports = async () => {
     setDownloadMenuAnchor(null)
     
@@ -403,7 +403,7 @@ const Dashboard = () => {
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)
       const zipFilename = `spectral_reports_${timestamp}.zip`
       
-      // Use Save As dialog
+      // Use Save As dialog to let user choose where to save
       await downloadWithSaveAs(zipBlob, zipFilename)
       toast.dismiss('download-reports')
     } catch (error: any) {
@@ -848,7 +848,7 @@ const Dashboard = () => {
               mb: 2
             }}
           >
-            Spectral Analyzer
+            SpectroView
           </Typography>
           <Typography variant="h6" color="text.secondary">
             AI-Powered Spectroscopy Analysis Platform

@@ -22,7 +22,7 @@ function App() {
           <Toolbar>
             <ScienceIcon sx={{ mr: 2, color: '#818cf8' }} />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 700 }}>
-              Spectral Analyzer
+              SpectroView
             </Typography>
             <Button
               color="inherit"
