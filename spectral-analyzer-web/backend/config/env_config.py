@@ -11,7 +11,10 @@ env_path = backend_dir / '.env'
 load_dotenv(dotenv_path=env_path)
 
 # API Keys
-OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY', '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')
+OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+
+if not OPENROUTER_API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set. Please check your .env file.")
 
 # Application Settings
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'

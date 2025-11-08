@@ -8,11 +8,21 @@ This script tests the OpenRouter client directly without project dependencies.
 import asyncio
 import json
 import sys
+import os
 import time
 import logging
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 import httpx
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+# Get API key from environment
+API_KEY = os.getenv('OPENROUTER_API_KEY')
+if not API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
 
 
 @dataclass
@@ -249,7 +259,7 @@ async def test_openrouter_connection():
     """Test OpenRouter API connection."""
     print("Testing OpenRouter API connection...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = StandaloneOpenRouterClient(api_key)
@@ -275,7 +285,7 @@ async def test_csv_analysis():
     """Test CSV analysis with real AI."""
     print("\nTesting CSV analysis with AI...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = StandaloneOpenRouterClient(api_key)
@@ -354,7 +364,7 @@ async def test_usage_tracking():
     """Test usage tracking."""
     print("\nTesting usage tracking...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = StandaloneOpenRouterClient(api_key)

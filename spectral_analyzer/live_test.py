@@ -12,18 +12,27 @@ import sys
 import os
 import json
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Add the spectral_analyzer directory to Python path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.api_client import OpenRouterClient
 
+# Get API key from environment
+API_KEY = os.getenv('OPENROUTER_API_KEY')
+if not API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is not set")
+
 
 async def test_openrouter_connection():
     """Test OpenRouter API connection with real API key."""
     print("Testing OpenRouter API connection...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = OpenRouterClient(api_key)
@@ -49,7 +58,7 @@ async def test_csv_analysis():
     """Test CSV analysis with real AI."""
     print("\nTesting CSV analysis with AI...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = OpenRouterClient(api_key)
@@ -139,7 +148,7 @@ async def test_usage_tracking():
     """Test usage tracking and cost monitoring."""
     print("\nTesting usage tracking...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     try:
         client = OpenRouterClient(api_key)
@@ -172,7 +181,7 @@ async def test_different_csv_formats():
     """Test AI with different CSV formats."""
     print("\nTesting different CSV formats...")
     
-    api_key = "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"
+    api_key = API_KEY
     
     test_cases = [
         {

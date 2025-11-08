@@ -396,7 +396,7 @@ Provide your analysis in a clear, structured JSON format that lab technicians an
         # Use OpenRouter API for interpretation
         from utils.api_client import OpenRouterClient
         
-        api_key = "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"
+        api_key = config_manager.get_api_key('openrouter')
         
         # Don't use async with - OpenRouterClient doesn't support context manager protocol
         client = OpenRouterClient(api_key, config_manager)
